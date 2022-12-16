@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+body {
+    background-color: hsl(217, 54%, 11%);
+    font-size: 18px;
+    width: 100%;
+    font-family: 'Outfit', sans-serif;
+}
+
+main {
+    background-color: hsl(216, 50%, 16%);
+    width: 340px;
+    height: 560px;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin: auto;
+}
+
+hr {
+    color: hsl(215, 32%, 27%);
+}
+
+.invisible {
+    display: none;
+    visibility: hidden;
+}
+
+.visible {
+    visibility: visible;
+}
+
+.image-header {
+    background-image: url(../images/image-equilibrium.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 55%;
+    width: auto;
+    border-radius: 5px;
+    padding: none;
+    position: relative;
+}
+
+.overlay {
+    filter: opacity(0);
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.overlay:hover {
+    background: hsl(178, 100%, 50%);
+    filter: opacity(0.5);
+}
+
+.image-header > img {
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -24px;
+    margin-left: -24px;
+}
+
+.clock > img {
+    height: 18px;
+    width: 18px;
+    margin-right: 10px;
+}
+
+.eth > img {
+    height: 18px;
+    width: 12px;
+    margin-right: 5px;
+}
+
+.credit > img {
+    height: 30px;
+    width: 30px;
+    margin-right: 15px; 
+    border-radius: 15px;
+    border: 1px solid #fff;
+}
+
+.creator {
+    font-weight: 400;
+}
+
+.creator,
+.item-name {
+    color: hsl(0, 0%, 100%);
+}
+
+.item-description,
+.clock,
+.credit {
+    font-weight: 300;
+    color: hsl(215, 51%, 70%);
+}
+
+.eth {
+    color: hsl(178, 100%, 50%);
+    font-weight: 800;
+}
+
+.item-name {
+        font-weight: 800;   
+}
+
+.eth, .clock, .credit {
+    display: flex;
+    align-items: center; 
+}
+
+.inline {
+    margin: 10px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.creator {
+    text-decoration-line: none;
+}
+
+hr {
+    margin: 20px 0px;
+}
+
+.creator:hover, .image-header:hover, .item-name:hover {
+ cursor: pointer;
+}
+
+.item-name:hover, .creator:hover {
+    color: hsl(178, 100%, 50%);
+}
+
+.image-header:hover {
+    
+}
