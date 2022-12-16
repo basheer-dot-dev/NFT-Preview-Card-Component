@@ -4,26 +4,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./src/images/favicon-32x32.png">
     <link rel="stylesheet" href="src/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" rel="stylesheet">
     <title>Frontend Mentor | NFT preview card component</title>
 </head>
 
 <body>
 
-    Equilibrium #3429
+    <main>
+        <div class="image-header">
+            <div class="overlay"></div>
+            <img id="eye" src="src/images/icon-view.svg" aria-hidden="true" />
+        </div>
+        <p class="item-name">Equilibrium #3429</p>
 
-    Our Equilibrium collection promotes balance and calm.
+        <p class="item-description">Our Equilibrium collection promotes balance and calm.</p>
 
-    0.041 ETH
-    3 days left
-
-    Creation of Jules Wyvern
-
-    <div class="attribution">
-        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-        Coded by <a href="#">Your Name Here</a>.
-    </div>
+        <span class="inline">
+            <span class="eth"><img aria-hidden="true" src="src/images/icon-ethereum.svg" />0.041 ETH</span>
+            <span class="clock"><img aria-hidden="true" src="src/images/icon-clock.svg" />3 days left</span>
+        </span>
+        <hr />
+        <span class="credit"><img alt="creator image" src="src/images/image-avatar.png" />Creation of&nbsp;<a class="creator" href="#">Jules Wyvern</a></span>
+    </main>
 </body>
-
+    <script type="text/javascript" src="src/js/script.js"></script>
 </html>
